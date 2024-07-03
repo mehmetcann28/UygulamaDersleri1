@@ -4,18 +4,18 @@ public class EnVerimliAsal {
 	public static void main(String[] args) {
 		
 		int number = 2097593;
-		boolean isPrime = true;
+		boolean status = true;
 		long startTime = System.nanoTime();
 		if (number <= 1) {
-			isPrime = false;
+			status = false;
 		}
 		else if (number == 2) {
-			isPrime = true;
+			status = true;
 		}
 		else {
 			for (long i = 2; i <= Math.sqrt(number); i++) {
 				if (number % i == 0) {
-					isPrime = false;
+					status = false;
 					break;
 				}
 			}
@@ -23,7 +23,7 @@ public class EnVerimliAsal {
 		long endTime = System.nanoTime();
 		long durationEnVerimliAsal = endTime - startTime;
 		
-		if (isPrime) {
+		if (status) {
 			System.out.println(number + " asaldır.");
 		}
 		else {
