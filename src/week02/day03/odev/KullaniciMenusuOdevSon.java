@@ -2,7 +2,7 @@ package week02.day03.odev;
 
 import java.util.Scanner;
 
-public class KullaniciMenusuDenemeSon {
+public class KullaniciMenusuOdevSon {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		String username;
@@ -50,7 +50,7 @@ public class KullaniciMenusuDenemeSon {
 				}
 				else if (langSelection == 1) {
 					while (true) {
-						System.out.println("0-- Bir ust menuye don\n" + "1--  Merhaba Dunya yazdir.\n" + "2-- " +
+						System.out.println("0-- Bir ust menuye don\n" + "1-- Merhaba Dunya yazdir.\n" + "2-- " +
 								                   "Faktoriyel " + "Hesapla.\n" + "3-- Asal sayi kontrolu yap.");
 						turkishMenuSelection = scanner.nextInt();
 						if (turkishMenuSelection == 0) {
@@ -119,7 +119,7 @@ public class KullaniciMenusuDenemeSon {
 				}
 				else if (langSelection == 2) {
 					while (true) {
-						System.out.println("0 -- Return to Main Menu.\n" + "1--  Print Hello World.\n" + "2-- Perform " +
+						System.out.println("0-- Return to Main Menu.\n" + "1-- Print Hello World.\n" + "2-- Perform " +
 								                   "Factorial " + "Calculation.\n" + "3-- Check Prime Numbers.");
 						englishMenuSelection = scanner.nextInt();
 						if (englishMenuSelection == 0) {
