@@ -6,6 +6,6 @@ public class Questions003 {
 		String surname = "KARAHAN";
 		System.out.println(name + "\n" + surname);
 		System.out.println("Isim\t\tSoyisim");
-		System.out.println(name+"\t\t"+surname);
+		System.out.println(name+"\t"+surname);
 	}
 }

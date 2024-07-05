@@ -1,0 +1,77 @@
+************ 2. HAFTA 1.GÜN NOTLARI *************
+
+final:
+final bir keyword'tür.
+final keyword'ü ile tanımlanan değişkenlere sadece 1 kez değer atanır.
+sonradan o değer değiştirilemez.
+
+Örnek kullanım :
+final int a=5;
+a=10;//olamaz final ile tanımlanan değişken üst satırda değer aldığı için başka değer alamaz.
+
+final int b;
+b=10;//burada üst satırda final değişkeni sadece tanımlanmış. O yüzden bu satırda ilk değeri aldığı için doğrudur.
+b=20;//final keyword'ü ile tanımlanan b değişkenine ikinci değer atanmak istemiş bu yüzden hatalıdır.
+
+Math.PI:
+Math sınıfındaki PI sabitinin javada nasıl tanımlandığına baktığımızda;
+public static final double PI olarak tanımlandığı görülür.
+Nedeni değerinin değişmesinin istenmemesi ki PI sayısı sabit bir değerdir.
+
+Scanner ve static nedir?(Kısaca)
+Scanner: Scanner'da nesne üretilir ardından Nesne üzerinden metodlara erişiliyor.
+static: Sınıfın üzerinden nesne üretilmez o sınıfın sabitine erişmemize olanak sağlar.
+
+float r=5f;//Bu kod sonunda f harfi yazılmaz ise otomatik double değişkeni olacağından hata verecektir.
+final float DAIRE_CEVRE=2*Math.PI*r;//Bu işlem cast edilmez ise double türünden işlem görür. Float istiyorsak mutlaka cast edilmelidir. Nedeni ondalıklı sayılar otomatik double değeri aldığındandır.
+
+cast edilmiş hali = final float DAIRE_CEVRE=(float)(2*Math.PI*r);
+
+Operatörler
+
+++a; && a++; arasındaki fark?
+int z=10;
+int b;
+b = a++; //Önce a değerini b ye aktarır sonra a yı 1 artırır.
+
+b = ++a; //Önce a yı 1 artırır ardından a nın değerini b ye aktarır.
+
+Tek 3'lü Operatör:Ternary Operatör //short if
+Ternary Operatör kullanımı: (koşul)?(doğruysa çalışacak kodlar):(yanlışsa çalışacak kodlar)
+
+i=30;
+j=20;
+
+int min(i<j)?i:j;//bu şekilde kullanılır. Ternary Operatör kullanılıyorsa mutlaka değişkende tutulmalı.
+
+Overload:Aşırı Yükleme : Birden fazla kullanım özelliği kazandırma.
+System.out.println("Deneme"+10);// + operatörü eğer 1 tane string bile varsa birleştirme işlemi yapar.
+System.out.println("Deneme"+"İki");// + operatörü eğer 1 tane string bile varsa birleştirme işlemi yapar.
+System.out.println(10+"İki");// + operatörü eğer 1 tane string bile varsa birleştirme işlemi yapar.
+
+char a = 'a';
+System.out.println(a);// a değişkeninin içindeki değeri yazdırır.
+System.out.println(a+1); // a değişkenini integer değerine dönüştürüp 1 ile toplamış.
+
+KARAR YAPILARI ~ DECISION STRUCTURES
+
+if = mantıksal bir ifade sonucuna göre davranış sergiler. Mantıksal ifade true olursa if olmazsa else çalışır ve if karar yapısı sona erer.
+
+if(mantıksal ifade)
+statement;// mantıksal ifade true ise ve tek satırlık işlemim varsa süslü parantez kullanılmayabilir.
+
+//Benim tercihim süslü parantezli kullanım olmalı.
+if(mantıksal ifade){
+statement;
+statement;
+}
+
+System.out.println(name + "\n" + surname); // "\n" Bir alt satıra geçip yazdırmaya devam eder.
+
+System.out.println(name+"\t"+surname); // "\t" Tab boyutu boşluk basıyor.
+
+while(mantıksal ifade(boolean değer alır)){
+    statement;
+    statement;
+}
+//while döngüsü koşul gerçekleşirse döngüyedeki işlemleri yapar yoksa yapmaz.
