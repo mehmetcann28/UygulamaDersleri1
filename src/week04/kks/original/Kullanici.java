@@ -1,4 +1,4 @@
-package week04.kks.refactoring;
+package week04.kks.original;
 
 import java.time.LocalDate;
 
